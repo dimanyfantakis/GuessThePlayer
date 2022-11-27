@@ -1,0 +1,55 @@
+<div class="home">
+    <h1 class="home-header">Guess the Player</h1>
+    <p class = "home-header-lead">
+        NBA edition
+        <fa-icon 
+        [icon]="faBasketball"
+        class="fa-lg"
+        [ngStyle]="{'color': '#d84315', 'padding-left': '10px'}"
+        >
+    </fa-icon>
+    </p>
+    
+
+    <div class="btn-container">
+        <app-button *ngIf="hasRoute('/')"
+        color="{{ showNewGame ? 'accent' : 'warn' }}"
+        text="{{ showNewGame ? 'New Game' : 'End Game' }}"
+        (btnClick)="toggleNewGame()"
+        >
+        </app-button>
+    </div>
+
+    <div class="game-result">
+        <div *ngIf="playerWon">
+            <h2 class="game-result-first">Congratulations!</h2>
+            <h3>You won!</h3>
+        </div>
+        <div *ngIf="playerLost">
+            <h2 class="game-result-first">You Lost!</h2>
+            <h3>Try Again</h3>
+        </div>
+    </div>
+
+    <div *ngIf="!showNewGame && !playerWon && !playerLost">
+        <mat-form-field  color="accent" class="form-field">
+            <input matInput placeholder="Search Player..." 
+                type="text" 
+                name="searchString" 
+                [(ngModel)]="searchString" 
+                (keyup)="searchPlayers()">
+        </mat-form-field>
+    
+        <div *ngIf="searchResult">
+            <app-players-result 
+                (onPlayerGuess)="searchPlayer($event)"
+                [playersResult]="searchResult"
+                >
+            </app-players-result>
+        </div>
+
+        <div *ngIf="playersGuess">
+            <app-guess [guesses]="playersGuesses" [predictions]="playersPredictions"></app-guess>
+        </div>
+    </div>  
+</div>

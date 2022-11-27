@@ -1,0 +1,33 @@
+<div class="guesses-container">
+    <div class="headers">
+        <h4>Position</h4>
+        <h4>Name</h4>
+        <h4>Team</h4>
+        <h4>Conference</h4>
+    </div>
+          
+    <div *ngFor="let guess of guesses; let i = index" class="guesses-card">
+        <mat-card>
+            <div class="guess-card">
+                <button mat-fab class="guess-button-position"
+                [ngStyle]="{'background-color':  predictions[i][0]}"
+                >
+                    {{guess.position}}
+                </button>
+                <button mat-button class="guess-button-name">
+                    {{guess.first_name}} {{guess.last_name}}
+                </button>
+                <button mat-raised-button class="guess-button-team"
+                [ngStyle]="{'background-color':  predictions[i][1]}"
+                >
+                    {{guess.team.name}}
+                </button>
+                <button mat-raised-button class="guess-button-conference"
+                [ngStyle]="{'background-color':  predictions[i][2]}"
+                >
+                    {{guess.team.conference}}
+                </button>
+            </div>
+        </mat-card>
+    </div>
+</div>

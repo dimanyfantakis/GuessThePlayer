@@ -1,0 +1,6 @@
+<div class="results" *ngFor="let result of playersResult">
+  <button mat-button class="player"
+  (click)="guessPlayer(result.id)">
+    {{result.first_name}} {{result.last_name}}
+  </button>
+</div>

@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$guess-the-player-primary: mat-palette($mat-grey);
+$guess-the-player-accent: mat-palette($mat-deep-orange);
+$guess-the-player-warn: mat-palette($mat-amber);
+
+$guess-the-player-theme: mat-dark-theme($guess-the-player-primary, $guess-the-player-accent, $guess-the-player-warn);
+
+@include angular-material-theme($guess-the-player-theme);

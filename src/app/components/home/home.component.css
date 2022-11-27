@@ -1,0 +1,32 @@
+.home {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.home-header {
+    text-align: center;
+}
+
+.home-header-lead {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.game-result {
+    text-align: center;
+}
+
+.game-result-first {
+    padding-bottom: 30px;
+}
+
+.form-field {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.btn-container {
+    padding-bottom: 40px;
+}

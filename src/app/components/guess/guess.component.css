@@ -1,0 +1,16 @@
+.guesses-card {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.guess-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.headers {
+    padding: 5px;
+    display: flex; justify-content: space-between;
+}
