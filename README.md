@@ -74,17 +74,23 @@ Dimitris Anyfantakis
 See [License][license-url] for more information regarding the license
 
 
+## Acknowledgments
+
+[balldontlieAPI][balldontlieAPI-url]
+
+
 
 [contributors-shield]: https://img.shields.io/github/contributors/dimanyfantakis/GuessThePlayer
 [contributors-url]: https://github.com/dimanyfantakis/GuessThePlayer/graphs/contributors
 [commits-shield]: https://img.shields.io/github/last-commit/dimanyfantakis/GuessThePlayer
 [commits-url]: https://github.com/dimanyfantakis/GuessThePlayer/commit/main
-[balldontlieAPI-url]: https://www.balldontlie.io/?ref=publicapis.dev#introduction
 [license-shield]: https://img.shields.io/github/license/dimanyfantakis/GuessThePlayer
 [license-url]: https://https://github.com/dimanyfantakis/GuessThePlayer/blob/main/LICENSE
 [issues-shield]: https://img.shields.io/github/issues/dimanyfantakis/GuessThePlayer
 [issues-url]: https://github.com/dimanyfantakis/GuessThePlayer/issues/
 [demo-url]: https://dimanyfantakis.github.io/GuessThePlayer/
+
+[balldontlieAPI-url]: https://www.balldontlie.io/?ref=publicapis.dev#introduction
 
 [Angular]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=Angular&logoColor=black
 [Angular-url]: https://angular.io/
